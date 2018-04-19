@@ -30,7 +30,6 @@ export class EditComponent implements OnInit {
     let tempObservable = this._httpService.edit(_id, this.author)
     tempObservable.subscribe(data => {
       this.author = data;
-      console.log(data);
     });
     this._router.navigate(['/all']);  
   }

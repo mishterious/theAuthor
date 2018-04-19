@@ -9,7 +9,7 @@
     <form (submit)="edit(_id)">
       <p> {{ _id }}</p>
       <h3> Name: <input type="text" name="author.name" [(ngModel)]="author.name"></h3>
-      <button [routerLink]="['/all']">Cancel</button> 
+      <button [routerLink]="['/']">Cancel</button> 
       <button type="submit">Submit</button>
     </form>
   

@@ -127,6 +127,9 @@ app.delete('/delete/:id', function(req, res){
     })
 });
 
+app.all('*', (req, res, next) => {
+    res.sendFile(path.resolve('./theAuthorsApp/dist/index.html'));
+});
 
 //Setting up the Server to listen to a partical port:
 app.listen(8000, function() {

@@ -8,7 +8,8 @@ import { AllComponent } from './all/all.component';
 const routes: Routes = [
   { path: 'add', component: AddComponent},
   { path: 'edit/:id', component: EditComponent},
-  { path: '**', component: AllComponent }
+  { path: '**', component: AllComponent },
+  { path: 'all', component: AllComponent }
 ];
 
 @NgModule({
